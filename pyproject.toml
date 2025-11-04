@@ -16,6 +16,7 @@ openpyxl = "3.1.5"
 lxml = "6.0.2"
 pdfminer-six = "20250506"
 matplotlib = "3.10.7"
+tabula-py = "2.10.0"
 
 [build-system]
 requires = ["poetry-core"]
