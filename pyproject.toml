@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "visidata-environment"
+version = "0.1.0"
+description = "visidata-environment project"
+authors = ["Nikolai Mazurkin <mazurkin@gmail.com>"]
+readme = ""
+
+[tool.poetry.dependencies]
+python = "3.12.12"
+
+[tool.poetry.group.visidata.dependencies]
+visidata = "3.3"
+pandas = "2.3.3"
+pyarrow = "22.0.0"
+openpyxl = "3.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
