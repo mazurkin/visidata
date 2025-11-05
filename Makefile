@@ -20,8 +20,8 @@ info:
 .PHONY: env-init
 env-init:
 	@conda create --yes --copy --name "$(CONDA_ENV_NAME)" \
-		python=3.12.12 \
-		conda-forge::poetry=2.2.1
+		python=3.10.19 \
+		conda-forge::poetry=1.8.5
 
 .PHONY: env-create
 env-create:

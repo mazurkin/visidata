@@ -6,7 +6,7 @@ authors = ["Nikolai Mazurkin <mazurkin@gmail.com>"]
 readme = ""
 
 [tool.poetry.dependencies]
-python = "3.12.12"
+python = "3.10.19"
 
 [tool.poetry.group.visidata.dependencies]
 visidata = "3.3"
