@@ -3,10 +3,10 @@
 # environment
 
     # conda env + python + poetry
-    $ make env-init
+    $ make env-create
 
     # packages
-    $ make env-create
+    $ make env-poetry-install
 
 # run
 
