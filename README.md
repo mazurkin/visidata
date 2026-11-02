@@ -1,5 +1,8 @@
 # VISIDATA environment
 
+- https://www.visidata.org/docs/
+- https://www.visidata.org/man/
+
 # environment
 
     # conda env + python + poetry

@@ -6,13 +6,16 @@ authors = ["Nikolai Mazurkin <mazurkin@gmail.com>"]
 readme = ""
 
 [tool.poetry.dependencies]
-python = "3.12.12"
+python = "3.12.*"
 
 [tool.poetry.group.platform.dependencies]
-setuptools = "80.3.1"
+setuptools = "84.2.1"
+pip = "26.2.2"
 
 [tool.poetry.group.visidata.dependencies]
-visidata = "3.4"
+visidata = "3.5"
+
+[tool.poetry.group.support.dependencies]
 pandas = "2.3.3"
 pyarrow = "22.0.0"
 h5py = "3.15.1"

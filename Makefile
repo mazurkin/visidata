@@ -1,7 +1,10 @@
 SHELL := /bin/bash
 ROOT  := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
-CONDA_ENV_NAME = visidata
+PYTHON_VERSION    = 3.12.15
+POETRY_VERSION    = 2.5.1
+
+CONDA_ENV_NAME    = visidata
 
 # -----------------------------------------------------------------------------
 # defaults
@@ -24,13 +27,17 @@ info:
 .PHONY: env-create
 env-create:
 	@conda create --yes --copy --name "$(CONDA_ENV_NAME)" \
-		conda-forge::python=3.12.12 \
-		conda-forge::poetry=2.2.1
+		conda-forge::python=$(PYTHON_VERSION) \
+		conda-forge::poetry=$(POETRY_VERSION)
 
 .PHONY: env-poetry-install
 env-poetry-install:
 	@conda run --no-capture-output --live-stream --name "$(CONDA_ENV_NAME)" \
-		poetry install --no-root
+		poetry install \
+          	--no-interaction \
+          	--no-ansi \
+          	--no-root \
+			--no-directory
 
 .PHONY: env-poetry-update
 env-poetry-update:
